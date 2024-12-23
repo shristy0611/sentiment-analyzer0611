@@ -13,8 +13,12 @@ load_dotenv()
 
 app = FastAPI()
 
-# Get CORS origins from environment variable
-cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
+# Get CORS origins from environment variable or use default list
+cors_origins = [
+    "http://localhost:5173",  # Local development
+    "https://shristyverse-sentiment-analyzer0611.netlify.app",  # Production Netlify site
+    "https://6768e9cca794027d9547c16d--shristyverse-sentiment-analyzer0611.netlify.app"  # Netlify deploy preview
+]
 
 app.add_middleware(
     CORSMiddleware,
