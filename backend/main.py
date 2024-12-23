@@ -107,7 +107,7 @@ IMPORTANT:
 5. Do not add any explanations or markdown formatting
 """
 
-@app.post("/api/register")
+@app.post("/api/v1/register")
 async def register_user(user: UserSession):
     if not user.nickname.strip():
         raise HTTPException(status_code=400, detail="Nickname cannot be empty")
@@ -120,7 +120,7 @@ async def register_user(user: UserSession):
     # Return existing session info if user exists
     token_manager = user_sessions[user.nickname]
     remaining_tokens = token_manager.get_remaining_tokens()
-    return {"message": f"Welcome back {user.nickname}! You have {remaining_tokens} tokens remaining."}
+    return {"message": f"Welcome back {user.nickname}! You have {remaining_tokens} tokens remaining to use for sentiment analysis."}
 
 @app.get("/api/tokens/{nickname}")
 async def get_tokens(nickname: str):

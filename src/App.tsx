@@ -71,6 +71,7 @@ function App() {
     setNickname(name);
     setDetectedLanguage(language);
     setShowWelcome(true);  // Show welcome transition after name submission
+    setError(null); // Clear any previous errors
     
     try {
       const response = await fetch(API_ENDPOINTS.register, {
@@ -82,16 +83,24 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to register');
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Failed to register');
       }
 
       const data = await response.json();
+      setWelcomeMessage(data.message);
       
       const tokenResponse = await fetch(API_ENDPOINTS.tokens(name));
+      if (!tokenResponse.ok) {
+        throw new Error('Failed to fetch tokens');
+      }
       const tokenData = await tokenResponse.json();
       setRemainingTokens(tokenData.remaining_tokens);
+      
+      // Set registered state after successful registration
+      setIsRegistered(true);
     } catch (err) {
-      setError('Failed to register. Please try again.');
+      setError(err instanceof Error ? err.message : 'Failed to register. Please try again.');
       setShowWelcome(false); // Reset if registration fails
     }
   };
