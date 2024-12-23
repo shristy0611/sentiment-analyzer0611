@@ -6733,5 +6733,204 @@
       "tokens_remaining": 8
     },
     "timestamp": "2024-12-20T23:57:01.619038"
+  },
+  {
+    "id": 101,
+    "text": "\u3053\u3093\u306b\u3061\u306f\n",
+    "analysis": {
+      "emotional_analysis": {
+        "primary_emotion": "-neutral",
+        "secondary_emotions": [
+          "\u53cb\u597d",
+          "\u793c\u5100"
+        ],
+        "emotional_intensity": 0.2,
+        "emotional_stability": 0.9,
+        "valence": 0.5
+      },
+      "psychological_insights": {
+        "mindset": "\u4e01\u5be7\u306a\u5fc3\u69cb\u3048",
+        "cognitive_patterns": [
+          "\u793e\u4f1a\u7684\u898f\u7bc4",
+          "\u6587\u5316\u7684\u80cc\u666f"
+        ],
+        "motivations": [
+          "\u4ea4\u6d41",
+          "\u30b3\u30df\u30e5\u30cb\u30b1\u30fc\u30b7\u30e7\u30f3"
+        ],
+        "rationality_score": 0.95,
+        "cognitive_biases": [
+          "\u306a\u3057",
+          "\u7121\u504f\u898b"
+        ]
+      },
+      "risk_assessment": {
+        "risk_level": 0.01,
+        "red_flags": [
+          "\u306a\u3057"
+        ],
+        "urgency": 0.1
+      },
+      "summary": "\u4e01\u5be7\u306a\u6328\u62f6\u306e\u8a00\u8449\u3067\u3042\u308a\u3001\u7279\u306b\u611f\u60c5\u7684\u307e\u305f\u306f\u5fc3\u7406\u7684\u306a\u554f\u984c\u306f\u898b\u3089\u308c\u307e\u305b\u3093\u3002",
+      "language_info": {
+        "language_code": "ja",
+        "language_name": "Japanese",
+        "native_name": "\u65e5\u672c\u8a9e",
+        "confidence": 0.99,
+        "direction": "ltr"
+      },
+      "tokens_remaining": 7
+    },
+    "timestamp": "2024-12-21T00:05:18.588013"
+  },
+  {
+    "id": 102,
+    "text": "fuck you\n",
+    "analysis": {
+      "emotional_analysis": {
+        "primary_emotion": "anger",
+        "secondary_emotions": [
+          "frustration",
+          "hostility"
+        ],
+        "emotional_intensity": 0.9,
+        "emotional_stability": 0.2,
+        "valence": 0.1
+      },
+      "psychological_insights": {
+        "mindset": "aggressive and confrontational",
+        "cognitive_patterns": [
+          "reactive thinking",
+          "impulsivity"
+        ],
+        "motivations": [
+          "defiance",
+          "rebellion"
+        ],
+        "rationality_score": 0.4,
+        "cognitive_biases": [
+          "emotional reasoning",
+          "black-and-white thinking"
+        ]
+      },
+      "risk_assessment": {
+        "risk_level": 0.7,
+        "red_flags": [
+          "aggression",
+          "confrontation"
+        ],
+        "urgency": 0.6
+      },
+      "summary": "The text expresses intense anger and hostility, indicating a high risk of aggressive behavior and a low level of emotional stability and rational thinking.",
+      "language_info": {
+        "language_code": "en",
+        "language_name": "English",
+        "native_name": "English",
+        "confidence": 0.99,
+        "direction": "ltr"
+      },
+      "tokens_remaining": 6
+    },
+    "timestamp": "2024-12-21T00:06:45.362047"
+  },
+  {
+    "id": 103,
+    "text": "\u0928\u0947\u092a\u093e\u0932\u0940",
+    "analysis": {
+      "emotional_analysis": {
+        "primary_emotion": "\u0909\u0924\u094d\u0938\u093e\u0939",
+        "secondary_emotions": [
+          "\u0906\u0928\u0928\u094d\u0926",
+          "\u0938\u0902\u0924\u0941\u0937\u094d\u091f\u093f"
+        ],
+        "emotional_intensity": 0.6,
+        "emotional_stability": 0.7,
+        "valence": 0.8
+      },
+      "psychological_insights": {
+        "mindset": "\u0938\u0915\u093e\u0930\u093e\u0924\u094d\u092e\u0915 \u0926\u0943\u0937\u094d\u091f\u093f\u0915\u094b\u0923",
+        "cognitive_patterns": [
+          "\u0906\u0924\u094d\u092e\u0935\u093f\u0936\u094d\u0935\u093e\u0938",
+          "\u0938\u0902\u0935\u0947\u0926\u0928\u0936\u0940\u0932\u0924\u093e"
+        ],
+        "motivations": [
+          "\u0938\u092b\u0932\u0924\u093e\u0915\u094b \u0907\u091a\u094d\u091b\u093e",
+          "\u0938\u0941\u0916\u0915\u094b \u0905\u0928\u0941\u092d\u0935"
+        ],
+        "rationality_score": 0.9,
+        "cognitive_biases": [
+          "\u0906\u0924\u094d\u092e-\u0938\u0902\u0930\u0915\u094d\u0937\u0923",
+          "\u0938\u093e\u092e\u093e\u091c\u093f\u0915 \u092a\u094d\u0930\u092d\u093e\u0935"
+        ]
+      },
+      "risk_assessment": {
+        "risk_level": 0.2,
+        "red_flags": [
+          "\u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u0906\u0924\u094d\u092e\u0935\u093f\u0936\u094d\u0935\u093e\u0938",
+          "\u092d\u093e\u0935\u0928\u093e\u0924\u094d\u092e\u0915 \u0905\u0938\u094d\u0925\u093f\u0930\u0924\u093e"
+        ],
+        "urgency": 0.1
+      },
+      "summary": "\u0935\u093f\u0936\u094d\u0932\u0947\u0937\u0923 \u0905\u0928\u0941\u0938\u093e\u0930 \u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0915\u094b \u092e\u0928\u094b\u0935\u093f\u091c\u094d\u091e\u093e\u0928 \u0909\u0924\u094d\u0938\u093e\u0939\u0940 \u0930 \u0938\u0915\u093e\u0930\u093e\u0924\u094d\u092e\u0915 \u0926\u0943\u0937\u094d\u091f\u093f\u0915\u094b\u0923\u0915\u094b \u0939\u0941\u0928\u094d\u091b, \u091c\u0938\u092e\u093e \u0906\u0924\u094d\u092e\u0935\u093f\u0936\u094d\u0935\u093e\u0938 \u0930 \u0938\u0902\u0935\u0947\u0926\u0928\u0936\u0940\u0932\u0924\u093e \u092a\u094d\u0930\u092e\u0941\u0916 \u092d\u0942\u092e\u093f\u0915\u093e \u0916\u0947\u0932\u094d\u091b\u0928\u094d\u0964",
+      "language_info": {
+        "language_code": "ne",
+        "language_name": "Nepali",
+        "native_name": "\u0928\u0947\u092a\u093e\u0932\u0940",
+        "confidence": 0.99,
+        "direction": "ltr"
+      },
+      "tokens_remaining": 9
+    },
+    "timestamp": "2024-12-21T00:08:18.654814"
+  },
+  {
+    "id": 104,
+    "text": "alphabets are fucking disgusting!\n",
+    "analysis": {
+      "emotional_analysis": {
+        "primary_emotion": "anger",
+        "secondary_emotions": [
+          "disgust",
+          "frustration"
+        ],
+        "emotional_intensity": 0.9,
+        "emotional_stability": 0.2,
+        "valence": 0.1
+      },
+      "psychological_insights": {
+        "mindset": "aggressive and intolerant",
+        "cognitive_patterns": [
+          "black and white thinking",
+          "emotional reactivity"
+        ],
+        "motivations": [
+          "expression of strong dislike",
+          "need for control"
+        ],
+        "rationality_score": 0.4,
+        "cognitive_biases": [
+          "confirmation bias",
+          "emotional reasoning"
+        ]
+      },
+      "risk_assessment": {
+        "risk_level": 0.6,
+        "red_flags": [
+          "aggressive language",
+          "intolerance"
+        ],
+        "urgency": 0.7
+      },
+      "summary": "The speaker expresses intense anger and disgust towards alphabets, indicating a strong negative emotional state and potential for aggressive behavior.",
+      "language_info": {
+        "language_code": "en",
+        "language_name": "English",
+        "native_name": "English",
+        "confidence": 0.99,
+        "direction": "ltr"
+      },
+      "tokens_remaining": 9
+    },
+    "timestamp": "2024-12-21T00:09:49.336964"
   }
 ]
