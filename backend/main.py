@@ -25,8 +25,7 @@ app.add_middleware(
 )
 
 # Initialize Groq client
-from groq.client import Groq
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+groq_client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 class TextAnalysisRequest(BaseModel):
     text: str
