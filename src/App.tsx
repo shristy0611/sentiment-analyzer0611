@@ -12,6 +12,7 @@ import { WelcomeTransition } from './components/WelcomeTransition';
 import { CulturalNicknameInput } from './components/CulturalNicknameInput';
 import { useResponsiveWidth } from './hooks/useResponsiveWidth';
 import { getTranslation } from './utils/translations';
+import { API_ENDPOINTS } from './config';
 
 interface Analysis {
   emotional_analysis: {
@@ -72,7 +73,7 @@ function App() {
     setShowWelcome(true);  // Show welcome transition after name submission
     
     try {
-      const response = await fetch('http://localhost:8000/api/register', {
+      const response = await fetch(API_ENDPOINTS.register, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -86,7 +87,7 @@ function App() {
 
       const data = await response.json();
       
-      const tokenResponse = await fetch(`http://localhost:8000/api/tokens/${name}`);
+      const tokenResponse = await fetch(API_ENDPOINTS.tokens(name));
       const tokenData = await tokenResponse.json();
       setRemainingTokens(tokenData.remaining_tokens);
     } catch (err) {
@@ -124,7 +125,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:8000/api/analyze-sentiment', {
+      const response = await fetch(API_ENDPOINTS.analyze, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
