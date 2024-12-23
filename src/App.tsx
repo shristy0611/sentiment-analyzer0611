@@ -68,12 +68,14 @@ function App() {
   }, [remainingTokens, nickname, isRegistered, analysis?.language_info?.language_code]);
 
   const handleNicknameSubmit = async (name: string, language: string) => {
+    console.log('Submitting nickname:', name, 'language:', language);
     setNickname(name);
     setDetectedLanguage(language);
     setShowWelcome(true);  // Show welcome transition after name submission
     setError(null); // Clear any previous errors
     
     try {
+      console.log('Making registration request to:', API_ENDPOINTS.register);
       const response = await fetch(API_ENDPOINTS.register, {
         method: 'POST',
         headers: {
@@ -84,17 +86,22 @@ function App() {
 
       if (!response.ok) {
         const errorData = await response.json();
+        console.error('Registration failed:', errorData);
         throw new Error(errorData.detail || 'Failed to register');
       }
 
       const data = await response.json();
+      console.log('Registration successful:', data);
       setWelcomeMessage(data.message);
       
+      console.log('Fetching tokens from:', API_ENDPOINTS.tokens(name));
       const tokenResponse = await fetch(API_ENDPOINTS.tokens(name));
       if (!tokenResponse.ok) {
+        console.error('Token fetch failed:', await tokenResponse.text());
         throw new Error('Failed to fetch tokens');
       }
       const tokenData = await tokenResponse.json();
+      console.log('Token data:', tokenData);
       setRemainingTokens(tokenData.remaining_tokens);
       
       // Set registered state after successful registration
