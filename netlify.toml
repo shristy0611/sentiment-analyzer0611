@@ -4,7 +4,6 @@
 
 [build.environment]
   NODE_VERSION = "20"
-  PYTHON_VERSION = "none"  # Disable Python build
 
 [[redirects]]
   from = "/*"
