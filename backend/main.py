@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
-from groq.client import Groq
+import groq
 from dotenv import load_dotenv
 import json
 from datetime import datetime
@@ -25,7 +25,7 @@ app.add_middleware(
 )
 
 # Initialize Groq client
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+groq_client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 class TextAnalysisRequest(BaseModel):
     text: str
