@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: sentiment-analyzer0611
+    env: python
+    buildCommand: ./render_build.sh
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: GROQ_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://shristyverse-sentiment-analyzer0611.netlify.app
